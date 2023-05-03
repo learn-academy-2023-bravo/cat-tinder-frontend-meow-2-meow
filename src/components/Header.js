@@ -15,7 +15,7 @@ const Header = () => {
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/catIndex">Meet the Cats!</NavLink>
+        <NavLink to="/catIndex">Meet all of the Purr Friends!</NavLink>
       </NavItem>
       <NavItem>
         <NavLink to="/catnew">
