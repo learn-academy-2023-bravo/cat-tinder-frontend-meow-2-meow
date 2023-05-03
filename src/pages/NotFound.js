@@ -1,18 +1,16 @@
-// import '.src/App.css'
-// import image from '.src/assets/cats_6128799_1280.jpg'
+import notFound from '../assets/cats_6128799_1280.jpg'
 
 const NotFound = () => {
   return(
-<>
-  <h3>No cat here</h3>
-  {/* <div className="not_found">
-    
-  </div> */}
-  {/* <div>
-    <img src="/assets/cats_6128799_1280.jpg" className="cat" alt="catback"/>
-  </div> */}
+    <>
+      <h3>No cat here</h3>
+      <img
+          src={notFound}
+          alt="Cat Tinder Not Found"
+          className="not-found"
+        />
 
-</>
+    </>
   )
 }
 

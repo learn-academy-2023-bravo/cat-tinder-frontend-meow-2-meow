@@ -1,10 +1,28 @@
-
+import { NavLink } from "react-router-dom"
+import { Nav, NavItem } from "reactstrap"
+import catLogo from '../assets/cats_6128799_1280.jpg'
 
 const Header = () => {
-  return(
-<>
-  <h3>This is the Header</h3>
-</>
+  return (
+    <Nav className="header-nav" pills >
+      <NavItem>
+        <NavLink to="/">
+          <img
+            src={catLogo}
+            alt="Cat Tinder logo with two cats hugging"
+            className="cat-logo"
+            />
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink to="/catIndex">Meet the Cats!</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink to="/catnew">
+          Add a Cat
+        </NavLink>
+      </NavItem>
+    </Nav>
   )
 }
 

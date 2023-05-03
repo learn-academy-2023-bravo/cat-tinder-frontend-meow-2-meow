@@ -1,7 +1,15 @@
 
 
-/* .not_found {
-  
-  background-image: url("./assets/cats_6128799_1280.jpg");
+.cat-logo {
+  height: 50px;
+}
 
-} */
+.footer {
+  margin-top: auto;
+  color: lightblue;
+  text-align: center;
+}
+
+.not-found {
+  height: 300px;
+}
