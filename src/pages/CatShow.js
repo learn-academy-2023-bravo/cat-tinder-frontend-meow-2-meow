@@ -1,12 +1,24 @@
+import {useParams} from "react-router-dom"
 
-
-const Show = () => {
+const CatShow = ({cats}) => {
+  const {id} = useParams()
+  let selectedCat =  cats.find(cat => cat.id === +id)
   return(
-<>
-  <h3>A Cat</h3>
-</>
+    <main>
+      {selectedCat && (
+      <>
+        <img
+        alt='cat pic'
+        src={selectedCat.image}
+        />
+        <h3>
+          {selectedCat.name} likes {selectedCat.enjoys}
+        </h3>
+      </>
+    )}
+    </main>
   )
 }
 
 
-export default Show
+export default CatShow
