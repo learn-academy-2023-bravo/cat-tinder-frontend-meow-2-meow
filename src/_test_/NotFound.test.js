@@ -5,9 +5,7 @@ describe('<NotFound/>', () => {
     it('it renders the home page for the user', () => {
 
         render(<NotFound/>)
-        screen.debug()
         const element = screen.getByText(/No cat here/i)
         expect(element).toBeInTheDocument()
-        screen.logTestingPlaygroundURL()
     })
 })
