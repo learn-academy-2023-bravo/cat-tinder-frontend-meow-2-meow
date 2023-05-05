@@ -21,6 +21,5 @@ describe("<Header/>", () => {
         )
         userEvent.click(screen.getByText(/Meet all of the Purr Friends/i))
         expect(screen.getByText(/Meet all of the Purr Friends/)).toBeInTheDocument()
-        screen.logTestingPlaygroundURL()
     })
 } )

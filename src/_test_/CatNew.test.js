@@ -24,11 +24,5 @@ describe("<CatNew/>", () => {
     
     const imageInput=screen.getByRole('textbox', {name: "Image"})
     expect(imageInput).toBeInTheDocument()
-  })
-    // it("a form with entries for name, age, gender, enjoys, image", () => {
-    //   const formName=screen.queryByLabelText('Label', {name: /name/i})
-    //   expect(formName.getAttribute("For")).toEqual("Name")
-    //   screen.logTestingPlaygroundURL()
-    // })
-
+  })  
 })
