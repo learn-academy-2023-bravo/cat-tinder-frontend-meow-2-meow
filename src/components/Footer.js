@@ -2,7 +2,7 @@
  const Footer = () => {
   return (
     <div className="footer">
-      <h3>Brought to you by Meow 2 Meow</h3>
+      <h5>Brought to you by Meow 2 Meow</h5>
     </div>
   )
 }
