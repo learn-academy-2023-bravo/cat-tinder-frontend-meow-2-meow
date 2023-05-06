@@ -1,12 +1,12 @@
-import {render, screen} from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import CatNew from "../pages/CatNew"
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-describe("<CatNew/>", () => {
+describe("<CatNew />", () => {
   it("renders the new cat form", () => {
     render(
       <BrowserRouter>
-        <CatNew/>
+        <CatNew />
       </BrowserRouter>
     )
 

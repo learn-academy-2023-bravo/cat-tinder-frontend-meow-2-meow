@@ -2,10 +2,10 @@ import { screen, render } from "@testing-library/react";
 import NotFound from '../pages/NotFound'
 
 describe('<NotFound/>', () => {
-    it('it renders the home page for the user', () => {
+    it('it renders the not found page for the user', () => {
 
         render(<NotFound/>)
-        const element = screen.getByText(/No cat here/i)
+        const element = screen.getByText(/no cat here/i)
         expect(element).toBeInTheDocument()
     })
 })

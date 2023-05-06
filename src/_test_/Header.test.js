@@ -1,4 +1,4 @@
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import Header from '../components/Header'
 import { BrowserRouter } from 'react-router-dom'
@@ -10,7 +10,7 @@ describe("<Header/>", () => {
                 <Header/>
             </BrowserRouter>
         )  
-        const indexLink = screen.getByText(/Meet all of the Purrr Friends/i)
+        const indexLink = screen.getByText(/meet all of our purrr Friends/i)
         expect(indexLink).toBeInTheDocument()
     })
     it("Header has clickable links", () => {
@@ -19,7 +19,7 @@ describe("<Header/>", () => {
                 <Header/>
             </BrowserRouter>
         )
-        userEvent.click(screen.getByText("Meet all of the Purrr Friends", {exact: false}))
-        expect(screen.getByText("Meet all of the Purrr Friends")).toBeInTheDocument()
+        userEvent.click(screen.getByText("Meet all of our Purrr Friends", {exact: false}))
+        expect(screen.getByText("Meet all of our Purrr Friends")).toBeInTheDocument()
     })
 })

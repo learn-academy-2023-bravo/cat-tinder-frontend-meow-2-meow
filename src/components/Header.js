@@ -10,7 +10,7 @@ const Header = () => {
         <NavLink to="/">
           <img
             src={catLogo}
-            alt="Cat Tinder logo with two cats hugging"
+            alt="Cat Tinder logo with two cats"
             className="cat-logo"
             />
         </NavLink>

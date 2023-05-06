@@ -1,17 +1,18 @@
-import  {Card, CardBody, CardTitle, CardSubtitle} from "reactstrap"
 import { NavLink } from "react-router-dom"
+import  {Card, CardBody, CardTitle, CardSubtitle} from "reactstrap"
 
 const CatIndex = ({cats}) => {
 
   return(
-    <main className="all-cat-cards">
+    <main className="cards-wrapper">
       {cats?.map((cat, index) => {
         return(
           <Card
             color="light"
             style= {{
-              width: '10rem'
+              width: '18rem'
             }}
+            key={index}
           >
           <img
             alt="Sample"
@@ -25,7 +26,7 @@ const CatIndex = ({cats}) => {
                 {cat.age}
               </CardSubtitle>
               <NavLink to={`/catShow/${cat.id}`}>
-                Purrrrr
+                Purrr
               </NavLink>
             </CardBody>
           </Card>
