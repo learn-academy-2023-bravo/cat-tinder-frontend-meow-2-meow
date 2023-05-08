@@ -4,10 +4,9 @@ import {Button} from 'reactstrap'
 const CatShow = ({cats, deleteCat}) => {
   const {id} = useParams()
   const navigate = useNavigate()
-  let selectedCat = cats.find((cat) => cat.id === +id)
+  let selectedCat = cats?.find((cat) => cat.id === +id)
 
-  const handleSubmit = (selectedCat) => {
-    debugger
+  const handleSubmit = () => {
     deleteCat(selectedCat.id)
     navigate('/catindex')
   }
@@ -29,9 +28,7 @@ const CatShow = ({cats, deleteCat}) => {
       <NavLink to={`/catedit/${id}`} className="nav-link">
         <Button>Edit Cat Profile</Button>
       </NavLink>
-      <NavLink to="/catindex">
-        <Button onSubmit={handleSubmit}>Delete Cat Profile</Button>
-      </NavLink>
+        <Button onClick={handleSubmit}>Delete Cat Profile</Button>
     </div>
     </main>
   )

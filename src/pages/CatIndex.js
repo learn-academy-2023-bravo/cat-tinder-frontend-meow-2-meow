@@ -24,10 +24,12 @@ const CatIndex = ({cats}) => {
                 {cat.name}
               </CardTitle>
               <CardSubtitle>
-                {cat.age}
+                Age: {cat.age}
+                <br/>
+                Gender: {cat.gender}
               </CardSubtitle>
               <NavLink to={`/catShow/${cat.id}`}>
-                Purrr
+                Purrr Details
               </NavLink>
             </CardBody>
           </Card>

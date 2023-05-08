@@ -57,11 +57,12 @@ a:active {
   padding-top: 70px;
   margin: 0 200px;
   text-align: center;
-  height: 70vh;
+  height: 130vh;
   /* font-style: italic; */
   background-image :linear-gradient(to right, lightblue , pink);
   font-family: 'Fredoka', sans-serif;
   border-radius: 40px;
+  size-adjust: auto ;
 }
 
 .p-home {

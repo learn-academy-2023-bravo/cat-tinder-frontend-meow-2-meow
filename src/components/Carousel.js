@@ -10,7 +10,7 @@ import {
 
 const items = [
   {
-    src: 'https://cdn.pixabay.com/photo/2021/04/24/08/22/cats-6203465__340.jpg',
+    src: 'https://c1.wallpaperflare.com/preview/46/458/528/cat-kitten-hunting-play.jpg',
     altText: 'kitty cat',
     caption: 'Tilly and Whiskers: Tilly, a 2-year-old female cat, was looking for a relaxed companion to enjoy lazy afternoons with. Whiskers, a 4-year-old male cat, was also seeking a low-key feline friend. They hit it off right away, bonding over their mutual love of napping in the sun and watching birds. Tilly and Whiskers have been inseparable ever since, often seen snuggled up together in their shared sunbeam.',
     key: 1,
@@ -60,7 +60,7 @@ const CarouselNav = (args) =>  {
       >
         <img src={item.src} alt={item.altText} style={{ width: "100%"}}/>
         <CarouselCaption
-          captionHeader={item.caption}
+          captionText={item.caption}
         />
       </CarouselItem>
     );
