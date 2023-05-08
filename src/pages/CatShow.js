@@ -4,10 +4,11 @@ import {Button} from 'reactstrap'
 const CatShow = ({cats, deleteCat}) => {
   const {id} = useParams()
   const navigate = useNavigate()
-  let selectedCat =  cats.find((cat) => cat.id === +id)
+  let selectedCat = cats.find((cat) => cat.id === +id)
 
-  const handleSubmit = () => {
-    deleteCat(id)
+  const handleSubmit = (selectedCat) => {
+    debugger
+    deleteCat(selectedCat.id)
     navigate('/catindex')
   }
   return(
@@ -15,13 +16,13 @@ const CatShow = ({cats, deleteCat}) => {
       {selectedCat && (
       <>
         <img
+        className="profile-pic"
         alt='cat pic'
         src={selectedCat.image}
         />
         <h3>
           {selectedCat.name} likes {selectedCat.enjoys}
-        </h3>
-        
+        </h3>      
       </>
     )}
     <div>

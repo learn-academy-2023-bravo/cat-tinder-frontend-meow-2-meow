@@ -30,7 +30,7 @@ const App = () =>{
   const createCat = (createdCat) => {
     fetch('http://localhost:3000/cats', {
       body: JSON.stringify(createdCat),
-      headers: {
+      headers : {
         "Content-Type": "application/json"
       },
       method: "POST"
@@ -59,7 +59,7 @@ const App = () =>{
       method: "DELETE"
     })
     .then(response => response.json())
-    .then(payload => readCat())
+    .then(() => readCat())
     .catch(error => console.log("Delete errors:", error))
   }
   return(

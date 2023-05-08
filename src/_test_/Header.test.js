@@ -10,7 +10,7 @@ describe("<Header/>", () => {
                 <Header/>
             </BrowserRouter>
         )  
-        const indexLink = screen.getByText(/meet all of our purrr Friends/i)
+        const indexLink = screen.getByText(/meet all of our purrr friends/i)
         expect(indexLink).toBeInTheDocument()
     })
     it("Header has clickable links", () => {

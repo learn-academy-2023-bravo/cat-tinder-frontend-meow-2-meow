@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import  {Card, CardBody, CardTitle, CardSubtitle} from "reactstrap"
 
+
 const CatIndex = ({cats}) => {
 
   return(
@@ -10,7 +11,7 @@ const CatIndex = ({cats}) => {
           <Card
             color="light"
             style= {{
-              width: '18rem'
+            width: '18rem'
             }}
             key={index}
           >

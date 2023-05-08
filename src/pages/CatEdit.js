@@ -17,12 +17,12 @@ const CatEdit = ({ cats, updateCat }) => {
   const handleChange = (e) => {
     setEditCat({ ...editCat, [e.target.name]: e.target.value })
   }
-  const handleSubmit =() => {
+  const handleSubmit = () => {
     updateCat(editCat, currentCat.id)
     navigate(`/catshow/${id}`)
   }
   return(
-    <>
+    <div>
       <Form className="cat-form">
         <FormGroup>
           <Label for="cat-name">Name</Label>
@@ -83,7 +83,7 @@ const CatEdit = ({ cats, updateCat }) => {
           Submit Updated Cat
         </Button>
         </Form>
-    </>
+    </div>
   )
 }
 
